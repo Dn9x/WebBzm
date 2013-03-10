@@ -24,7 +24,8 @@
                             "<div class='post_content'>" + item.content + "</div>" +
                             "<div class='post_info'>" + item.date + "&nbsp;&nbsp;" +
                             "<a class='auth_a' href='javascript:TagList(" + item.tid + ")'>" + item.tag + "</a>" +
-                            "&nbsp&nbsp<a href='Web.aspx' target='_blank' class='auth_a'>" + item.uname + "</a></div></div>";
+                            "&nbsp&nbsp<a href='Web.aspx' target='_blank' class='auth_a'>" + item.uname + "</a>" +
+                            "&nbsp&nbsp<a href='List.aspx' target='_blank' class='auth_a'>Tags</a></div></div>";
                     });
 
                     $("#Hid_Page").val(Number(page) + 10);
@@ -65,7 +66,8 @@ function TagList(op) {
                             "<div class='post_content'>" + item.content + "</div>" +
                             "<div class='post_info'>" + item.date + "&nbsp;&nbsp;" +
                             "<a href='javascript:TagList(" + item.tid + ")' class='auth_a'>" + item.tag + "</a>" +
-                            "&nbsp&nbsp<a href='Web.aspx' target='_blank' class='auth_a'>" + item.uname + "</a></div></div>";
+                            "&nbsp&nbsp<a href='Web.aspx' target='_blank' class='auth_a'>" + item.uname + "</a>" +
+                            "&nbsp&nbsp<a href='List.aspx' target='_blank' class='auth_a'>Tags</a></div></div>";
                 });
 
                 $("#Hid_Tag").val(op);

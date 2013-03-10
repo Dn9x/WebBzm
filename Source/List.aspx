@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="List.aspx.cs" Inherits="List" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="List.aspx.cs" Inherits="List" SmartNavigation="true" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -10,10 +10,21 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:TreeView ID="Tv_List" runat="server" ImageSet="Simple" ShowLines="True" Font-Names="Arial,Tahoma,Verdana" RootNodeStyle-Font-Size="16px" RootNodeStyle-ForeColor="#333333" ParentNodeStyle-Font-Size="14px" ParentNodeStyle-ForeColor="#333333" NodeStyle-Font-Size="12px" NodeStyle-ForeColor="#333333" HoverNodeStyle-ForeColor="blue">
-        </asp:TreeView>
+    <div id="main">
+        <fieldset id="head">
+            <legend>做夢也很累</legend>
+            <div id="Div_List" runat="server" style="width:100%; height:auto;">
+            </div>
+        </fieldset>
     </div>
-    </form>
+    </form> 
+    
+    
+    <script src="Pub/Scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function show(op){
+            $(op).next().toggle();
+        }
+    </script>
 </body>
 </html>

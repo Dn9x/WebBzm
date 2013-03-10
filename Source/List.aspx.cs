@@ -16,32 +16,38 @@ public partial class List : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            InitParent();
+            InitData();
         }
     }
 
 
-    private void InitParent()
-    {
-        this.Tv_List.Nodes.Add(new TreeNode("做夢也很累", "1"));
-
-        this.Tv_List.ExpandDepth();
-
+    private void InitData()
+    { 
         ArticleBll ab = new ArticleBll();
 
         DataTable dt = ab.GetTags();
 
+        string div = "";
+
         for (int i = 0; i < dt.Rows.Count; i++)
         {
-            this.Tv_List.Nodes[0].ChildNodes.Add(new TreeNode(dt.Rows[i]["tag_name"].ToString(), dt.Rows[i]["id"].ToString()));
-
+            div += "<div class='tag_list'>" +
+                         "<div class='tag_list_title' onclick='show(this)'>" + dt.Rows[i]["tag_name"].ToString() + "</div>" +
+                         "<div class='tag_list_cont'>";
+                        
+            //獲取文章信息
             DataTable dt1 = ab.GetArticleByTag(dt.Rows[i]["id"].ToString());
 
-            for (int j = 0; j < dt1.Rows.Count; j++)
+            //存放id的數組
+            for (int z = 0; z < dt1.Rows.Count; z++)
             {
-                this.Tv_List.Nodes[0].ChildNodes[i].ChildNodes.Add(new TreeNode(dt1.Rows[j]["title"].ToString(), dt1.Rows[j]["id"].ToString()));
+                div += "<a href='Detail.aspx?op=" + dt1.Rows[z]["id"].ToString() + "' target='_blank'>" + dt1.Rows[z]["title"].ToString() + "</a>";
             }
+
+            div += "</div></div>";
         }
+
+        this.Div_List.InnerHtml = div;
     }
 
 }

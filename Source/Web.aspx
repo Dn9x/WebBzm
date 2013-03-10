@@ -18,7 +18,7 @@
         <div class="auth_list">Dn9x</div>
         <div class="auth_list">xiuxu123@live.cn</div>
         <div class="auth_list">程序員</div>
-        <div class="auth_list">我沒有那麼偉大搞原創，我只是喜歡踩著別人的肩膀網上爬！<p />我的網站沒有備案所以沒有域名</div>
+        <div class="auth_list">我沒有那麼偉大搞原創，我只是喜歡踩著別人的肩膀網上爬！</div>
         <div class="auth_list auth_list_spce"></div>
     </div>
     </form>

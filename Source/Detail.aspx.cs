@@ -36,7 +36,8 @@ public partial class Detail : System.Web.UI.Page
             this.Div_Title.InnerHtml = dt.Rows[0]["title"].ToString() + "<input type='hidden' id='Hid_Title' value='" + dt.Rows[0]["rid"].ToString() + "' />";
             this.Div_Content.InnerHtml = dt.Rows[0]["content"].ToString();
             this.Div_Info.InnerHtml = dt.Rows[0]["date"].ToString() + "&nbsp;&nbsp;" + dt.Rows[0]["tag"].ToString() +
-                "&nbsp;&nbsp;<a href='Web.aspx' target='_blank' class='auth_a'>" + dt.Rows[0]["uname"].ToString() + "</a>&nbsp;&nbsp;&nbsp;&nbsp;留言請按q";
+                "&nbsp;&nbsp;<a href='Web.aspx' target='_blank' class='auth_a'>" + dt.Rows[0]["uname"].ToString() + "</a>" +
+                "&nbsp;&nbsp;<a href='List.aspx' target='_blank' class='auth_a'>Tags</a>&nbsp;&nbsp;&nbsp;&nbsp;留言請按q";
 
         }
         catch (Exception ex)
