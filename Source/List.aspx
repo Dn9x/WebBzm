@@ -7,6 +7,27 @@
     <title>做夢也很累-列表</title>
     <link rel="icon" href="Pub/Images/favicon.ico" type="image/x-icon" />
     <link href="Pub/Styles/index.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        a
+        {
+	         color:#444444;
+	         font-size:11px;
+	         text-decoration:underline;
+	         padding:4px;
+	         width:auto;
+	         margin:4px 4px;
+        }
+
+        a:hover
+        {
+	         color:#3399FF;
+	         font-size:11px;
+	         text-decoration:underline;
+	         padding:4px;
+	         width:auto;
+	         margin:4px 4px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">

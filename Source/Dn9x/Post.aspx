@@ -4,18 +4,37 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head id="Head1" runat="server">
-    <title>發表文章頁面</title>
-    <script src="../Pub/Editor/kindeditor.js" type="text/javascript"></script>
-    <script src="../Pub/Editor/lang/zh_TW.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        var editor;
-        KindEditor.ready(function (K) {
-            editor = K.create('#editor_id');
-        });
+    <title>發表文章頁面</title>	
+	<link rel="stylesheet" href="../Pub/Editor/themes/default/default.css" />
+	<link rel="stylesheet" href="../Pub/Editor/plugins/code/prettify.css" />
+	<script charset="utf-8" src="../Pub/Editor/kindeditor.js" type="text/javascript"></script>
+	<script charset="utf-8" src="../Pub/Editor/lang/zh_CN.js" type="text/javascript"></script>
+	<script charset="utf-8" src="../Pub/Editor/plugins/code/prettify.js" type="text/javascript"></script>
+    <script type="text/javascript">        
+        KindEditor.ready(function(K) {
+			var editor1 = K.create('#editor_id', {
+				cssPath : '../Pub/Editor/plugins/code/prettify.css',
+				uploadJson : '../Pub/Editor/asp.net/upload_json.ashx',
+				fileManagerJson : '../Pub/Editor/asp.net/file_manager_json.ashx',
+				allowFileManager : true,
+				afterCreate : function() {
+					var self = this;
+					K.ctrl(document, 13, function() {
+						self.sync();
+						K('form[name=form1]')[0].submit();
+					});
+					K.ctrl(self.edit.doc, 13, function() {
+						self.sync();
+						K('form[name=form1]')[0].submit();
+					});
+				}
+			});
+			prettyPrint();
+		});
     </script>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="example" runat="server">
     <div style=" margin:10px auto; width:80%; height:auto;">
         <textarea id="editor_id" name="content" style="width:700px;height:300px;" runat="server">
         </textarea>
