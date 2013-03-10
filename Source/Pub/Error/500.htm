@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>500</title>
+<style type="text/css">
+#apDiv1 {
+	position:fixed;
+	top:200px;
+	left:22%;
+	width:598px;
+	padding-top:10px;
+	padding-bottom:0px;
+	height:300px;
+	z-index:1;
+	border:1px #CCC solid;
+	border-radius:5px;
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+}
+
+#apDiv2 {
+	margin:50px auto;
+	width:598px;
+	height:639px;
+	z-index:1;
+	border:1px #CCC solid;
+	border-radius:5px;
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	-o-transform: scale(0.5);
+}
+#apDiv3 {
+	position:absolute;
+	width:auto;
+	height:auto;
+	z-index:3;
+	left: 38%;
+	top: 40px;
+	background:!important;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:240px;
+	letter-spacing:20px;
+	color:#555555;
+	color:
+}
+#apDiv4 {
+	position:fixed;
+	width:458px;
+	height:31px;
+	z-index:4;
+	right:2%;
+	bottom:4%;
+	border:1px #CCC solid;
+}
+#logo a{
+	font: 14px/1.65 Microsoft yahei, georgia, times new roman, times, serif;
+	color:#999;
+	font-weight:bolder;
+	text-decoration:none;
+	height:auto;
+	width:auto;
+	cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div id="apDiv1">
+
+
+
+<font color="#808080">24</font>&nbsp;<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">SetArticleValue&nbsp;sav&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">SetArticleValue</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#808080">25</font>&nbsp;<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#808080">26</font>&nbsp;<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//RSS中转站转换后的List</font><br />
+<font color="#808080">27</font>&nbsp;<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">List&lt;Article&gt;&nbsp;ars&nbsp;=&nbsp;sav.setArticle</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#808080">28</font>&nbsp;<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#808080">29</font>&nbsp;<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//实例化RSS工厂，这里你可以使用spring的注入</font><br />
+<font color="#808080">30</font>&nbsp;<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">RssFactory&nbsp;rf&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">RssFactory</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#808080">31</font>&nbsp;<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#808080">32</font>&nbsp;<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">String&nbsp;link&nbsp;=&nbsp;</font><font color="#2a00ff">&#34;http://www.biezuomeng.com/&#34;</font><font color="#000000">;</font><br />
+<font color="#808080">33</font>&nbsp;<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#808080">34</font>&nbsp;<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//设置频道，这个将会在所有Item的上面显示，也就是整个RSS描述</font><br />
+<font color="#808080">35</font>&nbsp;<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">rf.buildChannel</font><font color="#000000">(</font><font color="#2a00ff">&#34;做梦也很累&#34;</font><font color="#000000">,&nbsp;link,&nbsp;</font><font color="#2a00ff">&#34;个人的学习心得&#34;</font><font color="#000000">,&nbsp;</font><font color="#2a00ff">&#34;en&#34;</font><font color="#000000">,&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Date</font><font color="#000000">()</font><font color="#000000">,&nbsp;</font><font color="#2a00ff">&#34;做梦也很累&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#808080">36</font>&nbsp;<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#808080">37</font>&nbsp;<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//设置子频道内容--把我们要显示的list添加进去</font><br />
+<font color="#808080">38</font>&nbsp;<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">rf.buildRss</font><font color="#000000">(</font><font color="#000000">ars</font><font color="#000000">)</font><font color="#000000">;</font>
+
+
+
+</div>
+
+
+<div id="apDiv3">
+	500
+</div>
+
+<div id="apDiv4">
+  <table width="455" border="0">
+    <tr>
+      <td width="266" align="right"><font color="#999999">------------------------&gt;</font></td>
+      <td width="132">
+   	  <div id="logo">
+        	<a href="http://localhost:8080/Qlier/index.jsp" title="做梦也很累">做梦也很累</a>
+        </div>
+      </td>
+      <td width="35">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
+

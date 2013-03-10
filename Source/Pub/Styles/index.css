@@ -1,0 +1,155 @@
+﻿body 
+{
+	margin:0px;
+	padding:0px;
+}
+
+#main
+{
+	left:0px;
+	top:0px;
+	width:100%;
+	height:auto !important;
+	height:900px;
+	min-height:900px;
+	border:0px solid #CCCCCC;
+	z-index:1;
+	background:url(../Images/tile.gif);
+	overflow:hidden;
+	padding:0px 0px 0px 0px;
+}
+
+.post_list
+{
+	margin:10px auto;
+	padding:10px 6px;
+	width:600px;
+	overflow:hidden;
+	height:auto;
+	border:1px solid #CCCCCC;
+	border-radius:5px;
+	text-align:center;
+	box-shadow:4px 2px 6px #777;
+	font-family:Arial,Tahoma,Verdana;
+	background-color:White;
+}
+
+.post_list_post
+{
+	margin:10px auto;
+	padding:10px 6px;
+	width:600px;
+	overflow:hidden;
+	height:auto;
+	border:1px solid #CCCCCC;
+	border-radius:5px;
+	text-align:center;
+	box-shadow:4px 2px 6px #777;
+	font-family:Arial,Tahoma,Verdana;
+	background-color:White;
+}
+
+.post_title
+{
+	color:#046380;
+	text-decoration:none;
+	font-size:20px;
+	line-height:24px;
+	font-weight:bold;
+	text-align:left;
+	width:96%;
+	height:24px;
+	margin:2px auto;
+	border:0px solid #CCC;
+}
+
+.post_content
+{
+	font-size:12px;
+	color:#333;
+	width:96%;
+	height:auto;
+	text-align:left;
+	margin:2px auto;
+	border:0px solid #CCC;
+}
+
+.post_info
+{
+	font-size:12px;
+	color:#AAAAAA;
+	width:96%;
+	text-align:left;
+	height:14px;
+	margin:2px auto;
+	border:0px solid #CCC;
+}
+
+#page
+{
+	position:fixed;
+	right:10px;
+	top:30%;
+	width:60px;
+	height:130px;
+	border:0px solid #CCC;
+	z-index:10;
+}
+
+.page_up
+{
+	width:50px;
+	height:34px;
+	margin:20px auto;
+	cursor:pointer;
+	text-align:center;
+}
+
+.auth_list
+{
+	width:600px;
+	height:auto;
+	margin:20px auto;
+	border:0px solid #CCCCCC;
+	font-family:Arial,Tahoma,Verdana;
+	padding:10px 10px;
+	color:#333;
+	text-align:left;
+	font-size:12px;
+}
+
+.auth_list_title
+{
+	margin-top:80px;
+	font-size:28px;
+	font-weight:bold;
+}
+
+.auth_list_spce
+{
+	height:321px;
+}
+
+.auth_a
+{
+	color:#AAAAAA;
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+.detail_a
+{
+	color:#046380;
+	text-decoration:none;
+	font-size:20px;
+	line-height:24px;
+	font-weight:bold;
+	text-align:left;
+}
+
+.list_hover
+{
+	font-size:14px;
+	color:#AAAAAA;
+	font-family:Arial,Tahoma,Verdana;
+}
