@@ -13,6 +13,6 @@
             <div style="border:1px solid #CCC; width:60px; height:30px; line-height:30px; margin:10px;">你好啊</div>
         </marquee>
     </div>
-    </form>
+    </form>  
 </body>
 </html>

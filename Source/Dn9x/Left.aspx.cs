@@ -18,7 +18,7 @@ public partial class Dn9x_Left : System.Web.UI.Page
         if (Session["bzmname"] == null)
         {
             Response.Redirect("Enter.aspx");
-        }
+        } 
         else
         {
             this.Lbl_Name.Text = Session["bzmname"].ToString();
