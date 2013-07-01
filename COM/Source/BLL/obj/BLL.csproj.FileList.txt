@@ -1,0 +1,10 @@
+bin\Debug\BLL.dll
+bin\Debug\BLL.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\BLL.dll
+obj\Debug\BLL.pdb
+bin\Debug\DAL.dll
+bin\Debug\Util.dll
+bin\Debug\MySql.Data.dll
+bin\Debug\DAL.pdb
+bin\Debug\Util.pdb

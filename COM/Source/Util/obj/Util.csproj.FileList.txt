@@ -1,0 +1,6 @@
+bin\Debug\Util.dll
+bin\Debug\Util.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Util.dll
+obj\Debug\Util.pdb
+bin\Debug\MySql.Data.dll
